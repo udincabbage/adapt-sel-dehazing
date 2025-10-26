@@ -1,0 +1,40 @@
+==============================================
+  ADAPT-SEL Selector Training Summary (HZ-135)
+==============================================
+
+Best Model     : RandomForest
+CV-F1 Mean     : 0.583
+CV-F1 Std      : 0.157
+Penalized Score: 0.504
+
+Feature Columns:
+ - haze_score
+ - brightness
+ - local_contrast
+ - hist_entropy
+ - edge_density_diff
+ - retinex_mean
+ - color_skew
+ - colorfulness
+ - gradient_entropy
+ - hue_spread
+ - hf_energy_fft
+ - hf_energy_wavelet
+
+Label Encoding:
+ - H-EDCP-A: 0
+ - H-EDCP-B-GC: 1
+ - H-EDCP-C-AGC: 2
+ - H-EDCP-C-GC: 3
+
+Classification Report (Validation):
+              precision    recall  f1-score   support
+
+    H-EDCP-A       0.73      0.80      0.76        10
+ H-EDCP-B-GC       0.60      0.60      0.60         5
+H-EDCP-C-AGC       0.50      0.20      0.29         5
+ H-EDCP-C-GC       0.33      0.43      0.38         7
+
+    accuracy                           0.56        27
+   macro avg       0.54      0.51      0.51        27
+weighted avg       0.56      0.56      0.54        27

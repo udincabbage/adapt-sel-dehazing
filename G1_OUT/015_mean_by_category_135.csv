@@ -1,0 +1,4 @@
+category,haze_score,brightness,local_contrast,hist_entropy,edge_density_diff,retinex_mean,color_skew,colorfulness,gradient_entropy,hue_spread,hf_energy_fft,hf_energy_wavelet
+Moderate,0.4255,0.6606,33.8632,7.0445,0.1905,-0.0197,0.0265,11.5223,7.5429,0.1057,2.9341,0.1038
+Thick,0.7042,0.8561,22.1953,6.3295,0.0809,-0.0053,-1.0053,8.5073,7.0191,0.0946,2.3699,0.0526
+Thin,0.444,0.7205,35.5772,7.1106,0.2181,-0.0207,-0.4215,13.3119,7.6865,0.1387,2.9569,0.1071

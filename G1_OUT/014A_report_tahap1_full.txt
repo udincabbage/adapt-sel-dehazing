@@ -1,0 +1,26 @@
+============================================================
+Laporan Tahap 1 — Evaluasi Dasar & Paritas Fitur
+============================================================
+Tanggal pembuatan: 2025-10-26 14:28:17
+Dataset Train: HZ-900 (900) | Dataset Test: HZ-135 (135)
+Jumlah fitur dievaluasi: 12
+Metode terbaik: **H-EDCP-B-GC** | PSNR=20.42 dB | SSIM=0.867
+Rata-rata waktu eksekusi: 0.09 detik per citra.
+
+Statistik Fitur:
+- Fitur dengan rata-rata tertinggi: local_contrast (30.545)
+- Fitur dengan variasi terbesar: local_contrast (std=7.521)
+- Korelasi tertinggi antar fitur: brightness  brightness    1.0
+
+Analisis Paritas:
+Feature parity antara Train-900 dan Test-135 menunjukkan distribusi seimbang.
+Tidak ada feature shift signifikan, menandakan generalisasi model akan stabil.
+
+Evaluasi Baseline:
+EDCP unggul dengan PSNR & SSIM tertinggi, konsisten dengan literatur [16],[37].
+DCP dan CAP tetap kompetitif namun memiliki waktu eksekusi lebih efisien.
+
+Rekomendasi:
+ - Jika grafik parity kosong, jalankan kembali [05A] (ekstraksi fitur).
+ - Jika PSNR tidak muncul, periksa artefak [07A].
+ - Untuk validasi eksternal, lanjutkan [07C] dan [14B].

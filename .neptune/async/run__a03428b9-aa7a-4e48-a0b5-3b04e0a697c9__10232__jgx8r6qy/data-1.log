@@ -1,0 +1,8 @@
+{"obj": {"type": "AssignString", "path": ["sys", "name"], "value": "AutoLogger-Reset-20251026_140657"}, "version": 1, "at": 1761458818.9806387}
+{"obj": {"type": "AssignString", "path": ["sys", "description"], "value": ""}, "version": 2, "at": 1761458818.9806387}
+{"obj": {"type": "AssignString", "path": ["monitoring", "0a10aa2d", "hostname"], "value": "Hafidh-Notebook"}, "version": 3, "at": 1761458818.9806387}
+{"obj": {"type": "AssignString", "path": ["sys", "hostname"], "value": "Hafidh-Notebook"}, "version": 4, "at": 1761458818.9806387}
+{"obj": {"type": "AssignString", "path": ["monitoring", "0a10aa2d", "pid"], "value": "10232"}, "version": 5, "at": 1761458818.9806387}
+{"obj": {"type": "AssignString", "path": ["monitoring", "0a10aa2d", "tid"], "value": "13188"}, "version": 6, "at": 1761458818.9806387}
+{"obj": {"type": "AddStrings", "path": ["sys", "tags"], "values": ["Reset", "SateHaze1k", "AutoLogger"]}, "version": 7, "at": 1761458818.9816356}
+{"obj": {"type": "AssignBool", "path": ["sys", "failed"], "value": false}, "version": 8, "at": 1761458818.9816356}

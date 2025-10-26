@@ -1,0 +1,4 @@
+category,haze_score,brightness,local_contrast,hist_entropy,edge_density_diff,retinex_mean,color_skew,colorfulness,gradient_entropy,hue_spread,hf_energy_fft,hf_energy_wavelet
+moderate_fog,0.5369,0.6291,12.1292,5.3026,0.0049,-0.003,0.8035,15.4913,5.1632,0.1954,0.9138,0.016
+thick_fog,0.6984,0.7658,8.6267,4.8621,0.0013,-0.001,0.5638,9.8713,4.9699,0.2907,0.8744,0.0144
+thin_fog,0.3572,0.4538,13.9325,5.5595,0.0076,-0.0071,1.2281,15.942,5.7295,0.2064,1.0301,0.0203

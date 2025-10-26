@@ -1,0 +1,29 @@
+=================================================================
+Laporan Tahap 2 — Generalization RRSHID (Cross-Domain)
+=================================================================
+Tanggal pembuatan: 2025-10-26 14:28:36
+Jumlah citra RRSHID: 304 | Kategori: 3
+Metode terbaik di domain RR: **H-EDCP-C-GC** | PSNR=15.19 dB | SSIM=0.431
+Rata-rata waktu eksekusi: 0.02 detik per citra.
+
+Analisis Per-Kategori:
+ - moderate_fog → H-EDCP-C-GC     | PSNR=15.12 | SSIM=0.447
+ - thick_fog    → H-EDCP-C-AGC    | PSNR=13.13 | SSIM=0.311
+ - thin_fog     → H-EDCP-B-GC     | PSNR=17.60 | SSIM=0.485
+
+Analisis Generalization:
+ - Penurunan PSNR rata-rata dibanding HZ-135 menunjukkan domain shift sedang–kuat.
+ - Fitur dengan pergeseran terbesar:
+   1. local_contrast (Δ=18.841)
+   2. colorfulness (Δ=3.085)
+   3. gradient_entropy (Δ=2.160)
+ - Korelasi antar fitur RRSHID relatif mirip dengan HZ-135, menandakan generalisasi tetap stabil di level fitur.
+
+Kesimpulan:
+EDCP dan varian H-EDCP-C menunjukkan performa terbaik pada kabut tipis & sedang.
+Namun pada thick_fog performa menurun hingga ~20% PSNR, mengindikasikan perlunya adaptasi dinamis (CONF-SEL).
+
+Saran:
+ - Gunakan hasil ini sebagai dasar tuning threshold CONF-SEL.
+ - Jalankan [04]/[05A-RR]/[07C] jika artefak hilang.
+ - Lanjutkan ke [G4] untuk proses kalibrasi & routing adaptif.

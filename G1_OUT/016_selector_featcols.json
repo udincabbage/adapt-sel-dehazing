@@ -1,0 +1,1 @@
+["haze_score", "brightness", "local_contrast", "hist_entropy", "edge_density_diff", "retinex_mean", "color_skew", "colorfulness", "gradient_entropy", "hue_spread", "hf_energy_fft", "hf_energy_wavelet"]

@@ -1,0 +1,13 @@
+Fitur,Median Thin,Median Mod,Median Thick,Urut (Thin>Mod>Thick),Tren
+haze_score,0.440,0.427,0.699,❗,Non-Monotonic
+brightness,0.720,0.652,0.858,❗,Non-Monotonic
+local_contrast,36.157,34.464,21.350,OK,Monotonic Decreasing
+hist_entropy,7.129,7.128,6.302,OK,Monotonic Decreasing
+edge_density_diff,0.223,0.195,0.082,OK,Monotonic Decreasing
+retinex_mean,-0.021,-0.018,-0.005,OK,Monotonic Increasing
+color_skew,-0.405,0.043,-0.893,❗,Non-Monotonic
+colorfulness,13.228,11.420,8.642,OK,Monotonic Decreasing
+gradient_entropy,7.705,7.581,7.037,OK,Monotonic Decreasing
+hue_spread,0.144,0.104,0.096,OK,Monotonic Decreasing
+hf_energy_fft,2.967,2.955,2.389,OK,Monotonic Decreasing
+hf_energy_wavelet,0.109,0.104,0.053,OK,Monotonic Decreasing

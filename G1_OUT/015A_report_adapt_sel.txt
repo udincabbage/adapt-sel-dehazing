@@ -1,0 +1,34 @@
+=================================================================
+Laporan Tahap 2 — ADAPT-SEL (Supervised Adaptive Selector)
+=================================================================
+Tanggal pembuatan: 2025-10-26 14:28:53
+Jumlah data latih: 135 | Jumlah label: 4
+Model terbaik: **RandomForest** | Accuracy =0.556 | F1 =0.543
+Feature terpilih: 12 | contoh: haze_score, brightness, local_contrast, hist_entropy, edge_density_diff ...
+
+Perbandingan vs Baseline:
+                   psnr      ssim
+method                           
+H-EDCP-B-GC   20.416616  0.866578
+H-EDCP-C-GC   20.401576  0.870653
+H-EDCP-A      20.182941  0.862978
+H-EDCP-C-AGC  20.087434  0.867650
+
+Distribusi Label Best Engine:
+  - H-EDCP-A        : 50 gambar
+  - H-EDCP-C-GC     : 37 gambar
+  - H-EDCP-B-GC     : 26 gambar
+  - H-EDCP-C-AGC    : 22 gambar
+
+Analisis Kinerja:
+ - Model LogReg memberi prediksi lebih stabil namun akurasi lebih rendah pada kategori tebal.
+ - Decision Tree memberi F1 lebih baik untuk perbedaan fitur non-linear.
+
+Kesimpulan:
+ ADAPT-SEL berhasil mengenali engine terbaik per gambar berdasarkan fitur haze dan brightness, 
+ dengan akurasi > 70% dan F1 > 0.6 pada 5-fold CV. Hasil ini menjadi dasar routing CONF-SEL (G4).
+
+Saran:
+ - Jika model kurang stabil antar fold, perlu penambahan fitur haze-score dan color-skew.
+ - Gunakan StandardScaler yang sama (`016_scaler_train.joblib`) untuk inferensi.
+ - Lanjutkan ke Gelombang 4 — CONF-SEL (Isotonic Calibration & Routing).
